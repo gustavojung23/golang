@@ -27,8 +27,8 @@ func NewBuy(mercado string, data time.Time, nomeItem []string) (*Market, error) 
 
 	var itens []Itens
 
-	for _, nome := range nomeItem {
-		itens = append(itens, Itens{NomeItem: nome})
+	for _, produto := range nomeItem {
+		itens = append(itens, Itens{NomeItem: produto})
 	}
 
 	return &Market{
